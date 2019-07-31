@@ -1,6 +1,9 @@
 # Suppliers in Novosibirsk
 
-[TODO. There will be project description]
+These are the html pages of site Suppliers in Novosibirsk <br>
+Available pages:
+* [Main](https://ilya-zvoznikov.github.io/22_proto_markup/www/index.html)
+* [Requests](https://ilya-zvoznikov.github.io/22_proto_markup/www/requests.html)
 
 # Project Goals
 
