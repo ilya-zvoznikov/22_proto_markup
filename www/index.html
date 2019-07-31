@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Главная страница</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#">Регион:<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-link btn-custom-underline dropdown-toggle" href="#" id="navbarDropdownRegion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Новосибирск и область
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-end">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Леонид Федорович</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+
+  
+<div>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <p class="btn">Участники в Новосибирске:</p>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-link btn-custom-underline" href=#>105 оптовых компаний</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-link btn-custom-underline" href=#>25 производителей</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col col-lg-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col col-lg-10 my-4">
+          <h2 class="text-center">ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА</h2>
+        </div>
+      </div>
+      <div class="card border border-dark rounded-0 bg-custom text-dark">
+        <div class="card-body">
+
+          <form>
+            <div class="form-group row">
+
+              <div class="col-md-2">
+                <h4>Я ищу</h4>
+              </div>
+              <div class="col-md-10">
+
+               <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkСoncreteРroducts">
+                <label class="form-check-label" for="checkСoncreteРroducts">ЖБИ ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkBrick">
+                <label class="form-check-label" for="checkBrick">Кирпич / Газобетон / Брус</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkConcrete">
+                <label class="form-check-label" for="checkConcrete">Бетон / Раствор</label>
+              </div>
+
+              <select class="btn btn-link btn-custom-underline dropdown-toggle" id="selectRegion">
+                <option selected>В Новосибирске и области</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-2">
+              <label for="textareaDescription">Описание*</label>
+            </div>
+            <div class="col-md-10">
+              <textarea class="form-control border-custom" rows="3" id="textareaDescription"></textarea>
+              <small class="form-text text-muted">Пример: нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</small>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-2">
+              <label for="inputPhone">Телефон*</label>
+            </div>
+            <div class="col-md-4">
+              <input class="form-control border-custom" type="text" id="inputPhone">
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputName">Имя</label>
+            </div>
+            <div class="col-md-4">
+              <input class="form-control border-custom" type="text" id="inputName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col d-flex justify-content-center">
+              <button type="submit" class="btn btn-outline-dark btn-light">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+    <!-- requests -->
+    <div class="text-center mt-4"><h2>Свежие заявки</h2></div>
+    <div class="row text-muted">
+  <div class="col d-sm-flex">
+    <div class="flex-grow-1">
+      раздел
+      <select class="btn btn-link btn-custom-underline dropdown-toggle text-muted" id="selectSection">
+        <option selected>Все</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="flex-grow-0">
+      регион
+      <select class="btn btn-link btn-custom-underline dropdown-toggle text-muted" id="selectRegionRequests">
+        <option selected>Новосибирск и область</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+
+<div>
+  <div class="row">
+    <div class="col d-sm-flex text-muted">
+      <div class="flex-grow-1 mb-2">вчера, в 21:30</div>
+      <div class="flex-grow-0 mb-2">
+        &#9733 <a class="text-muted btn-custom-underline" href=#>в закладки</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-1">60 шт. ПК от 72-15 до ПК 21-15, Криводановка, с доставкой</div>
+  </div>
+  <div class="row">
+    <div class="col mb-2">
+      Алексей
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-bacic bg-custom border-custom">Показать телефон</button>
+      12 просмотров
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div>
+  <div class="row">
+    <div class="col d-sm-flex text-muted">
+      <div class="flex-grow-1 mb-2">вчера, в 23:15</div>
+      <div class="flex-grow-0 mb-2">
+        &#9733 <a class="text-muted btn-custom-underline" href=#>в закладки</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-1">10 шт. ПК 35-15, самовывоз</div>
+  </div>
+  <div class="row">
+    <div class="col mb-2">
+      Владимир
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-bacic bg-custom border-custom">Показать телефон</button>
+      5 просмотров
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div>
+  <div class="row">
+    <div class="col d-sm-flex text-muted">
+      <div class="flex-grow-1 mb-2">сегодня, в 12:45</div>
+      <div class="flex-grow-0 mb-2">
+        &#9733 <a class="text-muted btn-custom-underline" href=#>в закладки</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-1">нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</div>
+  </div>
+  <div class="row">
+    <div class="col mb-2">
+      Сергей
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-bacic bg-custom border-custom">Показать телефон</button>
+      17 просмотров
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div>
+  <div class="row">
+    <div class="col d-sm-flex text-muted">
+      <div class="flex-grow-1 mb-2">сегодня, в 13:10</div>
+      <div class="flex-grow-0 mb-2">
+        &#9733 <a class="text-muted btn-custom-underline" href=#>в закладки</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-1">срочно нужен красный кирпич! перезвоните</div>
+  </div>
+  <div class="row">
+    <div class="col mb-2">
+      Павел
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-bacic bg-custom border-custom">Показать телефон</button>
+      7 просмотров
+    </div>
+  </div>
+  <hr>
+</div>
+
+
+    <!-- end requests -->
+    <div class="row d-flex justify-content-center my-4">
+      <button type="submit" class="btn btn-outline-dark btn-light"><h5 class="mb-0">Посмотреть все заявки</h5></button>
+    </div>
+
+    <!-- end requests -->
+
+    <!-- carousel -->
+
+    <div class="row d-flex justify-content-center my-4">
+
+
+
+
+
+      <div class="col-sm-1 d-none d-sm-flex flex-wrap align-content-center justify-content-center">
+        <a class="carousel-control-icon-custom" href="#carouselExampleControls" role="button" data-slide="prev">
+          <h2>&#9668;</h2>
+        </a>
+
+      </div>
+      <div class="col col-md-8 col-lg-6">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            
+
+            <div class="carousel-item active">
+              <div class="card border-custom" style="height: 10rem;">
+                <div class="media my-2">
+                  <img class="m-2" src="https://image.flaticon.com/icons/png/512/33/33750.png" alt="no picture" height="64" width="64">
+                  <div class="media-body">
+                    <h5>Кирилл, 29 лет, Барабинск</h5>
+                    Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер! Бла-бла, мне помогло, все супер!
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="carousel-item ">
+              <div class="card border-custom" style="height: 10rem;">
+                <div class="media my-2">
+                  <img class="m-2" src="https://image.flaticon.com/icons/png/512/33/33750.png" alt="no picture" height="64" width="64">
+                  <div class="media-body">
+                    <h5>Максим, 43 года, Новосибирск</h5>
+                    Отличный сервис! Ребята просто выручили! Всем рекомендую! Не пожалеете!
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="carousel-item ">
+              <div class="card border-custom" style="height: 10rem;">
+                <div class="media my-2">
+                  <img class="m-2" src="https://image.flaticon.com/icons/png/512/33/33750.png" alt="no picture" height="64" width="64">
+                  <div class="media-body">
+                    <h5>Илья, 31 год, Новосибирск</h5>
+                    Все сюда! Крутой сайт! Я его делал)))
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 d-none d-sm-flex flex-wrap align-content-center justify-content-center">
+        <a class="carousel-control-icon-custom" href="#carouselExampleControls" role="button" data-slide="next">
+          <h2>&#9658;</h2>
+        </a>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!-- end carusel -->
+
+
+
+
+
+
+
+  </div>
+</div>
+</div>
+
+
+  <div class="container-fluid bg-custom border-custom-top">
+
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-4">
+        <h4 class="mb-4">Вы поставщик?</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <div class="row mb-4">
+            Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66
+          </div>
+          <div class="row">
+            Текст с дополнительной информацией по условиям сотрудничества.<br>
+            Возможно стоит вынести его на отдельную страницу.<br>
+            Текст с дополнительной информацией по условиям сотрудничества.<br>
+            Возможно стоит вынести его на отдельную страницу.<br>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="mt-4">
+            <form>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputOrganization">Организация</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputOrganization">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputPhone2">Телефон</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputPhone2">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputEmail">E-mail</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputEmail">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputName2">Имя</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputName2">
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-lg"></div>
+                <div class="col d-flex justify-content-center">
+                  <button type="submit" class="btn btn-outline-dark btn-light">
+                    Отправить информацию
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid bg-custom border-custom-top d-flex justify-content-end">
+    <h4 class="mb-0">//</h4>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#">Регион:<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="btn btn-link btn-custom-underline dropdown-toggle" href="#" id="navbarDropdownRegion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Новосибирск и область
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-end">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Леонид Федорович</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+
+  {% block main %}
+  {% endblock %}
+
+  <div class="container-fluid bg-custom border-custom-top">
+
+    <div class="container">
+      <div class="row d-flex justify-content-center mt-4">
+        <h4 class="mb-4">Вы поставщик?</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <div class="row mb-4">
+            Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888-77-66
+          </div>
+          <div class="row">
+            Текст с дополнительной информацией по условиям сотрудничества.<br>
+            Возможно стоит вынести его на отдельную страницу.<br>
+            Текст с дополнительной информацией по условиям сотрудничества.<br>
+            Возможно стоит вынести его на отдельную страницу.<br>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="mt-4">
+            <form>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputOrganization">Организация</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputOrganization">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputPhone2">Телефон</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputPhone2">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputEmail">E-mail</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputEmail">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-sm d-lg-flex justify-content-end">
+                  <label for="inputName2">Имя</label>
+                </div>
+                <div class="col-sm">
+                  <input class="form-control border-custom" type="text" id="inputName2">
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-lg"></div>
+                <div class="col d-flex justify-content-center">
+                  <button type="submit" class="btn btn-outline-dark btn-light">
+                    Отправить информацию
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid bg-custom border-custom-top d-flex justify-content-end">
+    <h4 class="mb-0">//</h4>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

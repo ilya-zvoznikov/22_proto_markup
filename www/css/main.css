@@ -1,0 +1,29 @@
+.btn-custom-underline {
+  text-decoration: underline;
+}
+
+.bg-custom {
+  background-color: #d9d9d9;
+}
+
+.border-custom {
+  border: 1px solid black;
+}
+
+.border-custom-top {
+  border-top: 2px solid black;
+}
+
+hr {
+  border-style: solid none;
+  border-width: 1px 0;
+}
+
+.carousel-control-icon-custom {
+  color: #a9a9a9;
+}
+
+.carousel-control-icon-custom:hover {
+  color: black;
+  text-decoration: none;
+}

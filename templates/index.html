@@ -1,0 +1,172 @@
+{% extends "_base.html" %}
+{% block title %}Главная страница{% endblock %}
+{% block main %}
+<div>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <p class="btn">Участники в Новосибирске:</p>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-link btn-custom-underline" href=#>105 оптовых компаний</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-link btn-custom-underline" href=#>25 производителей</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col col-lg-10">
+      <div class="row d-flex justify-content-center">
+        <div class="col col-lg-10 my-4">
+          <h2 class="text-center">ВАМ ПОЗВОНЯТ ЛУЧШИЕ ПОСТАВЩИКИ НОВОСИБИРСКА</h2>
+        </div>
+      </div>
+      <div class="card border border-dark rounded-0 bg-custom text-dark">
+        <div class="card-body">
+
+          <form>
+            <div class="form-group row">
+
+              <div class="col-md-2">
+                <h4>Я ищу</h4>
+              </div>
+              <div class="col-md-10">
+
+               <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkСoncreteРroducts">
+                <label class="form-check-label" for="checkСoncreteРroducts">ЖБИ ( фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки )</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkBrick">
+                <label class="form-check-label" for="checkBrick">Кирпич / Газобетон / Брус</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkConcrete">
+                <label class="form-check-label" for="checkConcrete">Бетон / Раствор</label>
+              </div>
+
+              <select class="btn btn-link btn-custom-underline dropdown-toggle" id="selectRegion">
+                <option selected>В Новосибирске и области</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+            </div>
+
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-2">
+              <label for="textareaDescription">Описание*</label>
+            </div>
+            <div class="col-md-10">
+              <textarea class="form-control border-custom" rows="3" id="textareaDescription"></textarea>
+              <small class="form-text text-muted">Пример: нужно фбс 24.4.6 50 шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</small>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-2">
+              <label for="inputPhone">Телефон*</label>
+            </div>
+            <div class="col-md-4">
+              <input class="form-control border-custom" type="text" id="inputPhone">
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputName">Имя</label>
+            </div>
+            <div class="col-md-4">
+              <input class="form-control border-custom" type="text" id="inputName">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col d-flex justify-content-center">
+              <button type="submit" class="btn btn-outline-dark btn-light">ОПУБЛИКОВАТЬ ЗАЯВКУ</button>
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+    <!-- requests -->
+    <div class="text-center mt-4"><h2>Свежие заявки</h2></div>
+    {% include "_requests.html" %}
+    <div class="row d-flex justify-content-center my-4">
+      <button type="submit" class="btn btn-outline-dark btn-light"><h5 class="mb-0">Посмотреть все заявки</h5></button>
+    </div>
+
+    <!-- end requests -->
+
+    <!-- carousel -->
+
+    <div class="row d-flex justify-content-center my-4">
+
+
+
+
+
+      <div class="col-sm-1 d-none d-sm-flex flex-wrap align-content-center justify-content-center">
+        <a class="carousel-control-icon-custom" href="#carouselExampleControls" role="button" data-slide="prev">
+          <h2>&#9668;</h2>
+        </a>
+
+      </div>
+      <div class="col col-md-8 col-lg-6">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            {% for review in reviews %}
+
+            <div class="carousel-item {% if review==reviews[0]%}active{% endif %}">
+              <div class="card border-custom" style="height: 10rem;">
+                <div class="media my-2">
+                  <img class="m-2" src="https://image.flaticon.com/icons/png/512/33/33750.png" alt="no picture" height="64" width="64">
+                  <div class="media-body">
+                    <h5>{{review.name}}, {{review.age}}, {{review.city}}</h5>
+                    {{review.content}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-1 d-none d-sm-flex flex-wrap align-content-center justify-content-center">
+        <a class="carousel-control-icon-custom" href="#carouselExampleControls" role="button" data-slide="next">
+          <h2>&#9658;</h2>
+        </a>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!-- end carusel -->
+
+
+
+
+
+
+
+  </div>
+</div>
+</div>
+{% endblock %}

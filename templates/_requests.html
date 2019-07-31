@@ -1,0 +1,55 @@
+<div class="row text-muted">
+  <div class="col d-sm-flex">
+    <div class="flex-grow-1">
+      раздел
+      <select class="btn btn-link btn-custom-underline dropdown-toggle text-muted" id="selectSection">
+        <option selected>Все</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="flex-grow-0">
+      регион
+      <select class="btn btn-link btn-custom-underline dropdown-toggle text-muted" id="selectRegionRequests">
+        <option selected>Новосибирск и область</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+{% for request in requests %}
+<div>
+  <div class="row">
+    <div class="col d-sm-flex text-muted">
+      <div class="flex-grow-1 mb-2">{{request.time}}</div>
+      <div class="flex-grow-0 mb-2">
+        &#9733 <a class="text-muted btn-custom-underline" href=#>в закладки</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col mb-1">{{request.description}}</div>
+  </div>
+  <div class="row">
+    <div class="col mb-2">
+      {{request.name}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-bacic bg-custom border-custom">Показать телефон</button>
+      {{request.views}} просмотров
+    </div>
+  </div>
+  <hr>
+</div>
+{% endfor %}
+
+    <!-- end requests -->

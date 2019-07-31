@@ -1,0 +1,46 @@
+{% extends "_base.html" %}
+{% block title %}Заявки{% endblock %}
+{% block main %}
+
+<div class="container-fluid">
+  <img src="http://s1.iconbird.com/ico/2013/8/429/w512h5121377938363185038homehousestreamline.png" alt="no logo" height="64">
+  Логотип
+</div>
+<div class="container">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col col-lg-10">
+
+      <h2>Заявки</h2>
+      {% include "_requests.html" %}
+      <div class="row d-flex justify-content-center my-4">
+        <button type="submit" class="btn btn-outline-dark btn-light"><h5 class="mb-0">Показать еще</h5></button>
+      </div>
+
+      <!-- pagination -->
+      <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end pagination -->
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
